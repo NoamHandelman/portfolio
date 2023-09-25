@@ -136,9 +136,7 @@
 //   return context;
 // };
 
-'use client';
-
-import React, {
+import {
   useEffect,
   useState,
   createContext,
@@ -201,6 +199,7 @@ export default function ThemeContextProvider({ children }: ThemeProviderProps) {
   );
 }
 
+// eslint-disable-next-line react-refresh/only-export-components
 export function useTheme() {
   const context = useContext(ThemeContext);
 
