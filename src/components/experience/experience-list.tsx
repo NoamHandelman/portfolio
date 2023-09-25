@@ -14,7 +14,7 @@ const ExperienceList = () => {
       transition={{ delay: 0.175 }}
       ref={ref}
       id="experience"
-      className="flex flex-col justify-center items-center gap-10 w-[min(100%,28rem)] self-center"
+      className="flex flex-col justify-center hover:px-4 items-center gap-10 w-[min(100%,28rem)] self-center"
     >
       <Header>Experience</Header>
       {experienceList.map((experience) => (

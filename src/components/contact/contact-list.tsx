@@ -33,7 +33,7 @@ const ContactList = () => {
           </a>
           <a
             className="group px-5 py-3 text-[0.87rem] sm:text-base flex rounded-full borderBlack hover:scale-110 active:scale-110  transition cursor-pointer dark:bg-gray-800 dark:outline-none"
-            href="/cv.pdf"
+            href="Noam-Handelman-CV.pdf"
             download
           >
             <div className="flex flex-row gap-4 items-center justify-center">
