@@ -10,7 +10,7 @@ import {
 import { useTheme } from '@/context/theme-provider';
 
 export function ModeToggle() {
-  const { setTheme } = useTheme();
+  const { toggleTheme } = useTheme();
 
   return (
     <DropdownMenu>
@@ -22,14 +22,16 @@ export function ModeToggle() {
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
         <DropdownMenuItem
-          onClick={() => setTheme('light')}
+          // onClick={() => setTheme('light')}
           className="cursor-pointer"
+          onClick={() => toggleTheme()}
         >
           Light
         </DropdownMenuItem>
         <DropdownMenuItem
-          onClick={() => setTheme('dark')}
+          // onClick={() => setTheme('dark')}
           className="cursor-pointer"
+          onClick={() => toggleTheme()}
         >
           Dark
         </DropdownMenuItem>
