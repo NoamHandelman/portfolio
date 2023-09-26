@@ -15,7 +15,7 @@ const Navbar = () => {
         animate={{ y: 0, x: '-50%', opacity: 1 }}
       >
         <nav className="flex  items-center justify-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-12 py-2 sm:top-[1.7rem] sm:h-[initial] sm:py-0">
-          <ul className="flex flex-wrap items-center justify-center  gap-y-1 text-[0.9rem] font-medium text-gray-500 sm:w-auto sm:flex-nowrap sm:gap-5">
+          <ul className="flex  w-[18rem] flex-wrap items-center justify-center  gap-y-1 text-[0.9rem] font-medium text-gray-500 sm:w-auto sm:flex-nowrap sm:gap-5">
             {navLinks.map((link) => (
               <LinkItem
                 key={link.hash}
@@ -28,7 +28,7 @@ const Navbar = () => {
         </nav>
       </motion.div>
       <motion.div
-        className="flex items-center fixed top-0 -right-1.5 mt-4"
+        className="flex items-center fixed top-0 -right-2.5 sm:right-1 mt-4"
         initial={{ y: -100, x: '-50%', opacity: 0 }}
         animate={{ y: 0, x: '-50%', opacity: 1 }}
       >

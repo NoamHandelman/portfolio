@@ -24,9 +24,7 @@ const LinkItem: FC<LinkItemProps> = ({
         setActiveSection(name);
         setTimeOfLastClick(Date.now());
       }}
-      className={clsx(
-        'h-3/4 flex items-center justify-center relative rounded-full'
-      )}
+      className="h-3/4 flex items-center justify-center relative rounded-full"
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
     >
