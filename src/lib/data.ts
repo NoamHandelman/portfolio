@@ -10,6 +10,10 @@ import docker from '@/assets//icons/docker.svg';
 import react from '@/assets//icons/react.svg';
 import java from '@/assets//icons/java.svg';
 import git from '@/assets/icons/git.svg';
+import python from '@/assets/icons/python.svg';
+import vite from '@/assets/icons/vite.svg';
+import springboot from '@/assets/icons/spring-boot.svg';
+import nextjs from '@/assets/icons/nextjs.svg';
 
 import { Github } from 'lucide-react';
 import { Mail } from 'lucide-react';
@@ -49,18 +53,22 @@ export const navLinks = [
 ] as const;
 
 export const techStack = [
-  typescript,
-  javascript,
-  java,
-  html,
-  css,
-  react,
-  mongo,
-  postgresql,
-  redis,
-  aws,
-  docker,
-  git,
+  { name: 'typescript', svg: typescript },
+  { name: 'javascript', svg: javascript },
+  { name: 'java', svg: java },
+  { name: 'python', svg: python },
+  { name: 'mongo', svg: mongo },
+  { name: 'postgresql', svg: postgresql },
+  { name: 'redis', svg: redis },
+  { name: 'springboot', svg: springboot },
+  { name: 'react', svg: react },
+  { name: 'vite', svg: vite },
+  { name: 'nextjs', svg: nextjs },
+  { name: 'html', svg: html },
+  { name: 'css', svg: css },
+  { name: 'aws', svg: aws },
+  { name: 'docker', svg: docker },
+  { name: 'git', svg: git },
 ] as const;
 
 export const contactList = [
@@ -99,7 +107,7 @@ export const experienceList = [
       'Production and analysis of intelligence materials at a high level of classification using advanced technological systems in spoken and written Arabic.',
     ],
   },
-];
+] as const;
 
 export const projectsList = [
   {
@@ -144,4 +152,4 @@ export const projectsList = [
     ],
     image: chatbout,
   },
-];
+] as const;

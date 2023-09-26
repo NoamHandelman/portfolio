@@ -11,7 +11,7 @@ interface ProjectItemProps {
     client: string;
     server: string;
   };
-  techStack: string[];
+  techStack: readonly string[];
   image: string;
 }
 

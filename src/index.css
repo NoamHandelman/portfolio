@@ -52,7 +52,6 @@ html {
   }
 
   .dark {
-    /* --background: 222.2 84% 4.9%; */
     --background: 222.2, 84%, 9%;
     --foreground: 210 40% 98%;
 
@@ -81,6 +80,24 @@ html {
     --input: 217.2 32.6% 17.5%;
     --ring: 212.7 26.8% 83.9%;
   }
+}
+
+.carousel .control-next.control-arrow:before,
+.carousel .control-prev.control-arrow:before {
+  border: solid rgb(168, 165, 165);
+  border-width: 0 4px 4px 0;
+  padding: 8px;
+  transform: rotate(-45deg);
+  color: rgb(168, 165, 165);
+}
+
+.carousel .control-prev.control-arrow:before {
+  transform: rotate(135deg);
+}
+
+.carousel .control-next.control-arrow:hover,
+.carousel .control-prev.control-arrow:hover {
+  background-color: transparent;
 }
 
 .borderBlack {

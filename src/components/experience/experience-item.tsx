@@ -4,7 +4,7 @@ interface ExperienceItemProps {
   title: string;
   company: string;
   dates: string;
-  description: string[];
+  description: readonly string[];
 }
 
 const ExperienceItem: FC<ExperienceItemProps> = ({
