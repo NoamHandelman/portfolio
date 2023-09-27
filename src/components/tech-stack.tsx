@@ -41,8 +41,9 @@ const TechStack = () => {
         {techStack.map((icon, index) => (
           <div
             key={index}
-            className={clsx('inline-block', {
+            className={clsx('sm:inline-block', {
               'bg-white rounded-full': icon.name === 'nextjs',
+              'dark:bg-white dark:rounded-full': icon.name === 'nextjs',
             })}
           >
             <img src={icon.svg} alt={icon.name} className="w-16 h-16" />
