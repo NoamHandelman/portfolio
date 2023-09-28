@@ -4,7 +4,6 @@ import { techStack } from '@/lib/data';
 import Header from './ui/header';
 import { useSectionInView } from '@/lib/hooks/use-section-in-view';
 import { motion } from 'framer-motion';
-import clsx from 'clsx';
 
 const TechStack = () => {
   const { ref } = useSectionInView('Skills');
@@ -39,14 +38,11 @@ const TechStack = () => {
         swipeable={true}
       >
         {techStack.map((icon, index) => (
-          <div key={index} className="inline-block">
-            <div
-              className={clsx('rounded-full', {
-                'bg-white': icon.name === 'nextjs',
-              })}
-            >
-              <img src={icon.svg} alt={icon.name} className="w-16 h-16" />
-            </div>
+          <div key={index} className="flex flex-col items-center">
+            <img src={icon.svg} alt={icon.name} className="w-16 h-16" />
+            <p className="rounded-xl text-sm p-2 mt-6 font-semibold bg-gray-100 dark:bg-white/10">
+              {icon.name.toUpperCase()}
+            </p>
           </div>
         ))}
       </Carousel>

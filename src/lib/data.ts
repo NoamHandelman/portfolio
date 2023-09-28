@@ -53,17 +53,17 @@ export const navLinks = [
 ] as const;
 
 export const techStack = [
-  { name: 'typescript', svg: typescript },
-  { name: 'javascript', svg: javascript },
+  { name: 'typeScript', svg: typescript },
+  { name: 'javaScript', svg: javascript },
   { name: 'java', svg: java },
   { name: 'python', svg: python },
-  { name: 'mongo', svg: mongo },
+  { name: 'mongodb', svg: mongo },
   { name: 'postgresql', svg: postgresql },
   { name: 'redis', svg: redis },
   { name: 'springboot', svg: springboot },
   { name: 'react', svg: react },
   { name: 'vite', svg: vite },
-  { name: 'nextjs', svg: nextjs },
+  { name: 'next.js', svg: nextjs },
   { name: 'html', svg: html },
   { name: 'css', svg: css },
   { name: 'aws', svg: aws },
